@@ -1,0 +1,41 @@
+/* This is default mode */
+/*@media(prefers-color-scheme: light){
+    
+}*/
+
+@media(prefers-color-scheme: black){
+    /*home file changes*/
+    .main-adaptive{
+        background-color: rgba(43, 41, 41, 0.7);
+    }
+
+    /*about file changes*/
+    .description{
+        color: rgba(255, 255, 255, 0.842);
+    }
+
+    /*contact file changes*/
+    .contact-me{
+        color: rgba(255, 255, 255, 0.842);
+    }
+
+    /*gallery file changes*/
+    .text-adaptive{
+        color: rgba(255, 255, 255, 0.842);
+    }
+
+    .gal-outro > a:active,
+    .gal-outro > a:hover{
+        color:  rgb(255, 255, 255);
+    }
+   
+    /*menu file changes*/
+    .menu-wrap .menu{
+        background: rgba(43, 41, 41, 0.7);
+    }
+
+    /*photo gallery file changes*/
+    .body-adaptive{
+        background-color: rgba(43, 41, 41, 0.7);
+    }
+}

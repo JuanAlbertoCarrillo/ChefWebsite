@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#about{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 3em;
+}
+
+.main-desc{
+    display: inline-block;
+    width: 100%;
+}
+
+.description{
+    padding-top: 3rem;
+    color:  rgba(43, 41, 41, 0.7);
+    width: 90%;
+    text-align: justify;
+    position: relative;
+    margin-right: auto;  
+    margin-left: auto;
+}
+.description-img{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 55%;
+    margin-top: 10%;
+    margin-left: 10%;
+    opacity: 0.8;
+}

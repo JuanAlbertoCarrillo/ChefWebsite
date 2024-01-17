@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*############################################################################################## - HOME SECTION STARTS */
+main{
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+.title{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: 100vw;
+    display: inline-block;
+    vertical-align: middle;    
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    /*animation-name: title-slidein;
+    animation-duration: 3s;*/
+}
+
+.title li{
+    vertical-align: middle;    
+    list-style: none;
+    display: inline-block;
+    color: rgba(200, 150, 41, 0.702);
+    font-weight: 200;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.title li:active,
+.title li:hover{
+    color: rgb(206, 153, 40);
+}
+
+.main-img{
+    width: 100%;
+    height: auto;
+    animation: ImgfadeIn 3s;
+}
+
+.kapy-img{
+    width: 80%;
+    margin: 5% 10% 15% 10%;
+    padding: 5%;
+    border: 0.06rem solid  #c79529b3;
+    opacity: 0.8;
+}
+
+.kapy-img:active,
+.kapy-img:hover{
+    opacity: 1;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.nav-op{
+    display: none;
+}
+
+@keyframes ImgfadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

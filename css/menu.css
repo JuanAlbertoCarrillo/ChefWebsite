@@ -1,0 +1,117 @@
+.menu-wrap{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.toggler{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.menu-wrap .hamburguer{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*menu lines*/
+.menu-wrap .hamburguer > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(226, 168, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/*move lines up*/
+.menu-wrap .hamburguer > div::before,
+.menu-wrap .hamburguer > div::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+    border-radius: 10px;
+}
+/*move 1 line down*/
+.menu-wrap .hamburguer > div::after{
+    top: 10px;
+}
+
+/* toggler animation*/
+.menu-wrap .toggler:checked + .hamburguer> div{
+    transform: rotate(135deg);
+}
+
+/*turn lines to x*/
+.menu-wrap .toggler:checked + .hamburguer> div::before,
+.menu-wrap .toggler:checked + .hamburguer> div::after{
+    top: 0;
+    transform: rotate(90deg)
+}
+/*rotate on hover when checked*/
+.menu-wrap .toggler:checked:hover + .hamburguer> div{
+    transform: rotate(225deg);
+}
+
+.menu-wrap .menu{
+    position: fixed;
+    padding-top: 100px;
+    padding-right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    height: 100vh;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-wrap .menu-op{  
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    padding: 5vh 0;
+}
+
+.menu-wrap .menu-op>a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(200, 150, 41, 0.702);
+    transition: color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.menu-wrap .menu-op>a:hover{
+    color:  rgb(200, 150, 41);
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/*Show menu*/
+.menu-wrap .toggler:checked~.menu{
+    transform: translateX(0);
+}
+
+

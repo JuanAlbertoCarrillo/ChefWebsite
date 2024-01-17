@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.reach-msg{
+    width: 100%;
+    text-align: center;
+    color: rgba(200, 150, 41, 0.702);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    animation-duration: 5s;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.contact-me{
+    padding-bottom: 1rem;
+    color: rgba(43, 41, 41, 0.7);
+    width: 90%;
+    text-align: justify;
+    position: relative;
+    margin-right: auto;  
+    margin-left: auto;
+}
+.mail{
+    color: rgba(200, 150, 41, 0.702);
+}
+.mail:hover{
+    color: rgb(206, 153, 41);
+}
+.outro_img{
+    width: 100%;
+    height: auto;
+}
+
+.outro_img > picture >img{
+    width: 80%;
+    margin: 0% 10% 10% 10%;
+}
+
+.social-networks{
+    width: 100%;
+    text-align: center;
+}
+
+.app{
+    display: inline-block;
+    width: 15vw;
+    height: auto;
+    border-radius: 50%;
+    padding-bottom: 5%;
+    margin-right: 5vw;
+    margin-left: 5vw
+
+}
+
+.social-img{
+    width: 100%;
+    opacity: 0.702;
+}
+
+.social-img:active,
+.social-img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+    .app{
+        width: 7vh;
+    }
+
+}
